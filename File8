@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Roots {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int rupees=in.nextInt();
+        int years=in.nextInt();
+        int r=in.nextInt();
+        double roi=(double)(rupees*years*r/100);
+        double amt=(double)rupees+(roi);
+        double discount=(double)roi*0.02;
+        double bal=(double)amt-discount;
+        System.out.printf("%.2f%n",roi);
+        System.out.printf("%.2f%n",amt);
+        System.out.printf("%.2f%n",discount);
+        System.out.printf("%.2f%n",bal);
+
+    }
+}
