@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Roots {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int notes=0;
+        while(n>=100)
+        {
+        n-=100;
+        notes++;
+        }
+        while(n>=50)
+        {
+            n-=50;
+            notes++;
+        }
+        while(n>=10)
+        {
+            n-=10;
+            notes++;
+        }
+        while(n>=5)
+        {
+            n-=5;
+            notes++;
+        }
+        while(n>=2)
+        {
+            n-=2;
+            notes++;
+        }
+        while(n>=1)
+        {
+            n-=1;
+            notes++;
+        }
+        System.out.println(notes);
+    }
+}
